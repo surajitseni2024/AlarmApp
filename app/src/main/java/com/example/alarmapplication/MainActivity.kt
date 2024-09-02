@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //This is Modified from Surajit Branch
+
         alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
         intent = Intent(this@MainActivity, AlarmReceiver::class.java)
         pendingIntent = PendingIntent.getBroadcast(
